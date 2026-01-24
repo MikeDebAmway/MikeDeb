@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Benessere e Opportunità - Prodotti Premium & Business</title>
+        <meta name="description" content="Benvenuto nel nostro angolo dedicato al benessere. Scopri integratori e cosmetici di eccellenza e un'opportunità di business a basso rischio.">
+        <link rel="canonical" href="https://example.com">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    'sage': {
+                      50: '#f6f7f6',
+                      100: '#e3e7e3',
+                      200: '#c7d0c7',
+                      300: '#a3b2a3',
+                      400: '#7a8f7a',
+                      500: '#5c735c',
+                      600: '#485a48',
+                      700: '#3c4a3c',
+                      800: '#323d32',
+                      900: '#2b332b'
+                    },
+                    'cream': {
+                      50: '#fefdfb',
+                      100: '#fdf9f3',
+                      200: '#faf2e4',
+                      300: '#f5e8d0',
+                      400: '#eed9b3',
+                      500: '#e4c590',
+                      600: '#d4a574',
+                      700: '#c18a5a',
+                      800: '#a0714a',
+                      900: '#825d3e'
+                    }
+                  }
+                }
+              }
+            }
+        </script>
+    </head>
+    <body class="bg-gradient-to-br from-cream-50 to-sage-50 text-sage-800 font-sans">
+<section id="contact" class="py-20 bg-gradient-to-br from-emerald-600 to-teal-700 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-emerald-400/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-teal-400/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            
+            <div class="text-white space-y-8 lg:sticky lg:top-24">
+                <div>
+                    <span class="inline-block py-1 px-3 rounded-full bg-emerald-800/50 border border-emerald-500/30 text-emerald-100 text-sm font-medium mb-4 backdrop-blur-sm">
+                        Parla con noi
+                    </span>
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                        Iniziamo il tuo <br/>
+                        <span class="text-emerald-200">cambiamento.</span>
+                    </h2>
+                    <p class="text-lg text-emerald-50 mb-8 leading-relaxed max-w-lg">
+                        Hai domande sui prodotti o vuoi capire meglio l'opportunità di business? Compila il modulo.
+                        <br><br>
+                        <strong>Michael o Debora</strong> ti risponderanno personalmente, solitamente entro 24 ore.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="https://wa.me/3534910029" target="_blank" class="flex items-center gap-3 p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-sm transition-all duration-300 group">
+                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                            <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="font-medium text-emerald-50">WhatsApp</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/debby-mike-50255739b/" target="_blank" class="flex items-center gap-3 p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-sm transition-all duration-300 group">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                            <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="font-medium text-emerald-50">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-10 relative">
+                <div class="absolute -top-6 -right-6 md:-right-8 bg-sage-100 p-4 rounded-full shadow-lg hidden md:block animate-bounce duration-[3000ms]">
+                   <i data-lucide="sparkles" class="w-8 h-8 text-emerald-600"></i>
+                </div>
+
+                <form id="whatsappForm" class="space-y-6">
+                    <div class="space-y-2">
+                        <label for="name" class="text-sm font-semibold text-sage-700 ml-1">Nome e Cognome</label>
+                        <div class="relative group">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <i data-lucide="user" class="w-5 h-5 text-sage-400 group-focus-within:text-emerald-600 transition-colors"></i>
+                            </div>
+                            <input type="text" id="name" name="name" required placeholder="Mario Rossi" 
+                                class="w-full pl-11 pr-4 py-4 bg-sage-50 border border-sage-200 rounded-xl text-sage-800 placeholder-sage-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="email" class="text-sm font-semibold text-sage-700 ml-1">Email</label>
+                            <div class="relative group">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <i data-lucide="mail" class="w-5 h-5 text-sage-400 group-focus-within:text-emerald-600 transition-colors"></i>
+                                </div>
+                                <input type="email" id="email" name="email" required placeholder="mario@example.com" 
+                                    class="w-full pl-11 pr-4 py-4 bg-sage-50 border border-sage-200 rounded-xl text-sage-800 placeholder-sage-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="phone" class="text-sm font-semibold text-sage-700 ml-1">Telefono</label>
+                            <div class="relative group">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <i data-lucide="phone" class="w-5 h-5 text-sage-400 group-focus-within:text-emerald-600 transition-colors"></i>
+                                </div>
+                                <input type="tel" id="phone" name="phone" placeholder="+39 333 ..." 
+                                    class="w-full pl-11 pr-4 py-4 bg-sage-50 border border-sage-200 rounded-xl text-sage-800 placeholder-sage-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 transition-all duration-300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="interest" class="text-sm font-semibold text-sage-700 ml-1">Cosa ti interessa maggiormente?</label>
+                        <div class="relative group">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <i data-lucide="heart-handshake" class="w-5 h-5 text-sage-400 group-focus-within:text-emerald-600 transition-colors"></i>
+                            </div>
+                            <select id="interest" name="interest" class="w-full pl-11 pr-10 py-4 bg-sage-50 border border-sage-200 rounded-xl text-sage-800 appearance-none focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 transition-all duration-300 cursor-pointer">
+                                <option value="" disabled selected>Seleziona un'opzione</option>
+                                <option value="products">Info sui Prodotti (Integrazione/Cosmesi)</option>
+                                <option value="business">Opportunità di Business</option>
+                                <option value="both">Entrambi</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+                                <i data-lucide="chevron-down" class="w-5 h-5 text-sage-400"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="message" class="text-sm font-semibold text-sage-700 ml-1">Il tuo messaggio</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Ciao! Vorrei saperne di più su..." 
+                            class="w-full px-4 py-4 bg-sage-50 border border-sage-200 rounded-xl text-sage-800 placeholder-sage-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 transition-all duration-300 resize-none"></textarea>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="privacy" name="privacy" type="checkbox" required class="w-5 h-5 border-sage-300 rounded text-emerald-600 focus:ring-emerald-500 bg-sage-50 cursor-pointer">
+                        </div>
+                        <div class="ml-3 text-sm">
+                            <label for="privacy" class="text-sage-500">
+                                Acconsento al trattamento dei dati personali secondo la <a href="privacy.html" target="_blank" class="font-medium text-emerald-600 hover:text-emerald-500 underline">Privacy Policy</a>.
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full group bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex justify-center items-center gap-2">
+                        <span>Invia Richiesta su WhatsApp</span>
+                        <i data-lucide="send" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    
+                    <p class="text-center text-xs text-sage-400 mt-4">
+                        Verrai reindirizzato a WhatsApp per confermare l'invio.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function() {
+    "use strict";
+
+    const CONFIG = {
+        waNumber: "393534910029",
+        // Lista nera di termini (puoi espanderla)
+        badWords: [
+            // Volgarità comuni
+            "cazzo",
+            "minchia",
+            "merda",
+            "stronzo",
+            "stronzetto",
+            "vaffanculo",
+            "fanculo",
+            "porca",
+            "porco",
+            "boia",
+            "troia",
+            "puttana",
+            "bordello",
+            "cazzata",
+            "stronzata",
+            "sborra",
+            "inculato",
+
+            // Insulti diretti generici
+            "cretino",
+            "cretina",
+            "idiota",
+            "idiotone",
+            "imbecille",
+            "deficiente",
+            "testa di",
+            "pezzo di",
+            "faccia di",
+            "figlio di",
+            "babbeo",
+            "babbuino",
+            "mammalucco",
+            "pirla",
+            "pirlone",
+            "citrullo",
+            "rincoglionito",
+            "rimbambito",
+            "stupido",
+            "ottuso",
+            "sciocco",
+            "scemo",
+            "scemotto",
+            "balordo",
+            "meschino",
+
+            // Insulti di contesto aggressivo
+            "lurido",
+            "schifoso",
+            "schifosa",
+            "infame",
+            "bastardo",
+            "bastardello",
+            "disgraziato",
+            "fallito",
+            "incapace",
+            "patetico",
+            "miserabile",
+            "vergogna",
+            "ridicolo",
+            "scadente",
+
+            // Espressioni ostili / minacciose generiche
+            "sparisci",
+            "vai via",
+            "levati",
+            "togliti",
+            "va a morire",
+            "ti spacco",
+            "ti rompo",
+            "ti rovino",
+
+            // Insulti legati a comportamento
+            "bugiardo",
+            "falso",
+            "ipocrita",
+            "ruffiano",
+            "leccaculo",
+            "parassita",
+            "scroccone",
+            "traditore",
+            "venduto",
+
+            // Parole o frasi usate come insulto generico
+            "pagliaccio",
+            "buffone",
+            "nullità",
+            "buono a nulla",
+            "imbroglione",
+            "cialtrone",
+            "villano",
+            "teppista",
+            "predone",
+
+            // Ambigue / potenzialmente inappropriate a seconda del contesto
+            "osceno",
+            "volgare",
+            "indecente",
+
+            // blasfemie
+            "dio",
+            "madonna",
+            "gesu",
+            "cristo"
+        ], 
+        minMessageLength: 10
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('whatsappForm');
+        if (!form) return;
+        if (window.lucide) lucide.createIcons();
+
+        form.addEventListener('submit', handleFormSubmit);
+    });
+
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        const form = e.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        
+        const formData = new FormData(form);
+        const data = {
+            name: formData.get('name')?.trim(),
+            email: formData.get('email')?.trim().toLowerCase(),
+            phone: formData.get('phone')?.replace(/\D/g, ''), // Solo numeri
+            interest: formData.get('interest'),
+            message: formData.get('message')?.trim(),
+            honeypot: formData.get('website_url') // Campo nascosto per bot
+        };
+
+        const errors = [];
+
+        // 1. Protezione Honeypot (Anti-Bot)
+        if (data.honeypot) return; // Se un bot compila questo campo nascosto, ferma tutto.
+
+        // 2. Filtro Volgarità e Coerenza Testuale
+        const fullText = `${data.name} ${data.message} ${data.email}`.toLowerCase();
+        const hasBadWords = CONFIG.badWords.some(word => fullText.includes(word));
+        if (hasBadWords) {
+            errors.push("Il linguaggio utilizzato o i dati inseriti non sono consentiti.");
+        }
+
+        // 3. Controllo Numeri di Telefono Fake (es: 3333333333)
+        if (/^(\d)\1+$/.test(data.phone) || data.phone.length < 9 || data.phone.length > 15) {
+            errors.push("Inserisci un numero di telefono cellulare valido.");
+        }
+
+        // 4. Validazione Nome (Almeno nome e cognome o nome reale)
+        if (!data.name.includes(' ') || data.name.length < 5) {
+            errors.push("Inserisci il tuo nome e cognome completi.");
+        }
+
+        // 5. Validazione Email Professionale
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(data.email)) {
+            errors.push("L'indirizzo email inserito non è valido.");
+        }
+
+        if (errors.length > 0) {
+            alert("⚠️ Errore di validazione:\n\n" + errors.join("\n"));
+            return;
+        }
+
+        // --- INVIO ---
+        submitBtn.disabled = true;
+        
+        const interestMap = { 'products': 'Prodotti', 'business': 'Business', 'both': 'Entrambi' };
+        const text = `*NUOVO CONTATTO QUALIFICATO*\n\n*Nome:* ${data.name}\n*Email:* ${data.email}\n*Tel:* ${data.phone}\n*Interesse:* ${interestMap[data.interest] || 'N/D'}\n\n*Messaggio:* ${data.message}`;
+
+        const url = `https://wa.me/${CONFIG.waNumber}?text=${encodeURIComponent(text)}`;
+        
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (!newWindow) window.location.href = url;
+
+        setTimeout(() => { submitBtn.disabled = false; }, 2000);
+    }
+})();
+</script>
+
+    </body>
+</html>
